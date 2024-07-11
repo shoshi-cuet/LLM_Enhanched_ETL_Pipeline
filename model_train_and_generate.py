@@ -160,7 +160,6 @@ def model_train_generate_save(database='adventureworks', window=1, test_file= 'p
             max_seq_length=512,                             # maximum length of the sequence
             tokenizer=tokenizer,                            # initialized tokenizer
             args=training_arguments,                        # initialized training arguments for fine-tuning
-            callbacks=[CombinedTensorBoardCallback],        # shows the training and the validation loss in the same graph
     )
 
     ''' ------------------------------------------------------------------------
