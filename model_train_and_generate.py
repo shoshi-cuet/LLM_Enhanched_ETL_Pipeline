@@ -11,7 +11,7 @@ import json
 
 # helper file import
 from helper import  Helper 
-from tensorboard_train_val_combined import CombinedTensorBoardCallback
+from huggingface_hub import login
 
 # Connect google drive to colab
 from google.colab import drive
@@ -32,11 +32,12 @@ from trl import SFTTrainer
 
 def model_train_generate_save(database='adventureworks', window=1, test_file= 'products', model='meta-llama/Llama-2-7b-hf'):
     ''' ------------------------------------------------------------------------
-                                intial model and device setup                              
+                    intial model, device setup, and authentication                              
         ------------------------------------------------------------------------
     '''
-    model_name = "Hugofernandez/Mistral-7B-v0.1-colab-sharded"           # base model
+    model_name = "mistralai/Mistral-7B-v0.1"                             # base model
     device = 'cuda'                                                      # set device - we used GPU A100 and supported CUDA
+    login()                                                              # insert your access token - especially if using gated models 
 
     ''' ------------------------------------------------------------------------
                                    tokenizer configuration                              
