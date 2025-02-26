@@ -11,7 +11,7 @@ The theme of the thesis was to find ways to integrate LLMs to enhance the poor c
   - [Acknowledgements](#acknowledgements)
 
 ## Overview
-ETL pipelines are manually maintained by data engineers and they also process complex metadata about the underlying schema structure of the data. This, in essence, is a cumbersome and error-prone method. This repository holds an approach to incorporate LLMS to understand these schema structures and complex metadata. The models are not included in this repository, however, we worked with different open-source LLM libraries available in the HuggingFace repository. 
+ETL pipelines are manually maintained by data engineers and they also process complex metadata about the underlying schema structure of the data. This, in essence, is a cumbersome and error-prone method. This repository holds an approach to incorporate LLMs to understand these schema structures and complex metadata. The models are not included in this repository, however, we worked with different open-source LLM libraries available in the HuggingFace repository. 
 
 ## Datasets
   - **AdventureWorks**: is a widely used comprehensive dataset provided by Microsoft for learning and practicing SQL Server and database management. The dataset contains 759254 rows of semi-structured data distributed over 71 tables in 8 modules of imaginary AdventureWorks Cycles data. This dataset can be obtained by following the instructions in [link](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works)
@@ -24,6 +24,7 @@ please note that schema files used for the training process are not included in 
 ## Installations
 To use the evolutionary strategies for a continuous learning framework, follow these steps:
 
+  - Dowload the datasets from the link provided.
   - Clone this repository: git clone https://github.com/shoshi-cuet/LLM_Enhanched_ETL_Pipeline
   - Install the required dependencies: pip install -r requirements.txt
   - Explore the code examples in the repository to get started.
