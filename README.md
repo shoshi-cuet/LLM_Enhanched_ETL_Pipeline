@@ -27,6 +27,7 @@ To use the evolutionary strategies for a continuous learning framework, follow t
   - Dowload the datasets from the link provided.
   - Clone this repository: git clone https://github.com/shoshi-cuet/LLM_Enhanched_ETL_Pipeline
   - Install the required dependencies: pip install -r requirements.txt
+  - Preprocess the dataset using the [Preprocess_windowed_input.py](https://github.com/shoshi-cuet/LLM_Enhanched_ETL_Pipeline/edit/main/README.md#:~:text=Preprocess_windowed_input.py) to run the experiments
   - Explore the code examples in the repository to get started.
 
 ## Acknowledgements
